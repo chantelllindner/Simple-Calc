@@ -1,0 +1,15 @@
+/Users/chantelllinder/Projects/SimpleCalculator/SimpleCalculator/obj/Debug/net6.0/SimpleCalculator.csproj.AssemblyReference.cache
+/Users/chantelllinder/Projects/SimpleCalculator/SimpleCalculator/obj/Debug/net6.0/SimpleCalculator.GeneratedMSBuildEditorConfig.editorconfig
+/Users/chantelllinder/Projects/SimpleCalculator/SimpleCalculator/obj/Debug/net6.0/SimpleCalculator.AssemblyInfoInputs.cache
+/Users/chantelllinder/Projects/SimpleCalculator/SimpleCalculator/obj/Debug/net6.0/SimpleCalculator.AssemblyInfo.cs
+/Users/chantelllinder/Projects/SimpleCalculator/SimpleCalculator/obj/Debug/net6.0/SimpleCalculator.csproj.CoreCompileInputs.cache
+/Users/chantelllinder/Projects/SimpleCalculator/SimpleCalculator/bin/Debug/net6.0/SimpleCalculator
+/Users/chantelllinder/Projects/SimpleCalculator/SimpleCalculator/bin/Debug/net6.0/SimpleCalculator.deps.json
+/Users/chantelllinder/Projects/SimpleCalculator/SimpleCalculator/bin/Debug/net6.0/SimpleCalculator.runtimeconfig.json
+/Users/chantelllinder/Projects/SimpleCalculator/SimpleCalculator/bin/Debug/net6.0/SimpleCalculator.dll
+/Users/chantelllinder/Projects/SimpleCalculator/SimpleCalculator/bin/Debug/net6.0/SimpleCalculator.pdb
+/Users/chantelllinder/Projects/SimpleCalculator/SimpleCalculator/obj/Debug/net6.0/SimpleCalculator.dll
+/Users/chantelllinder/Projects/SimpleCalculator/SimpleCalculator/obj/Debug/net6.0/refint/SimpleCalculator.dll
+/Users/chantelllinder/Projects/SimpleCalculator/SimpleCalculator/obj/Debug/net6.0/SimpleCalculator.pdb
+/Users/chantelllinder/Projects/SimpleCalculator/SimpleCalculator/obj/Debug/net6.0/SimpleCalculator.genruntimeconfig.cache
+/Users/chantelllinder/Projects/SimpleCalculator/SimpleCalculator/obj/Debug/net6.0/ref/SimpleCalculator.dll
