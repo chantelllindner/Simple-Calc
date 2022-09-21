@@ -8,22 +8,28 @@
             //Intro
             Console.WriteLine("***********************************************\n Chantell's Simple Calculator & Tip Generator!\n***********************************************\n\n");
 
-            while (keepGoing = true)
+            while (keepGoing == true)
             {
-                Console.WriteLine("Please select 1 for Simple Calculator or 2 for Tip Generator. ");
                 //Ask for 1 or 2
+                string answer = GetData.GetMainMenu();
                 
                 //switch statement
-
+                switch(answer)
+                {
+                    case "1":
+                        keepGoing =Simple.TheCalculator();
+                        break;
+                    case "2":
+                        keepGoing =Tip.TipCalculator();
+                        break;
+                    default:
+                        keepGoing = false;
+                        break;
+                }
                 
-                // Simple.TheCalculator();
-                
-                Tip.TipCalculator();
-                
-                //Ask To Continue
-                keepGoing = GetData.GetContinue();
             }
-
+            
+            Console.WriteLine("\nThank you! \n*******\nTHE END\n*******");
 
         }
        

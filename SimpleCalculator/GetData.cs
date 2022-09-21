@@ -41,26 +41,26 @@ public class GetData
         return Math.Round(number, 2);
     }
 
-    public static bool GetContinue()
+    public static string GetContinue(string CalcName)
     {
-                       
-        Console.Write("Would you like to continue (y/n): ");
+        Console.WriteLine("\n ***************\n   Continue?   \n ***************");               
+        Console.WriteLine($"Please choose from the following: \n1 Try {CalcName} again \n2 Go back to Main Menu \n3 Exit Program ");
+        Console.Write("Enter Option:");
         string resposne = Console.ReadLine()!.ToLower();
 
-        while (resposne != "y" && resposne != "n")
+        while (resposne != "1" && resposne != "2" && resposne != "3")
         {
 
             Console.WriteLine("Invalid Input. Try Again...");                              
-            Console.Write("Would you like to continue (y/n): ");
+            Console.WriteLine($"Please choose from the following: \n1 Try {CalcName} again \n2 Go back to Main Menu \n3 Exit Program ");
+            Console.Write("Enter Option:");
             resposne = Console.ReadLine()!.ToLower();
                 
         }
-        if (resposne == "n")
-        {
-            Console.WriteLine("Thank you! \n______END______");
-            return false;
-        }
-        return true;
+        
+        Console.WriteLine();
+        return resposne;
+
 
     }
     
@@ -76,6 +76,21 @@ public class GetData
             txtOperator = Console.ReadLine();                
         }
         return txtOperator;
+    }
+
+    public static string GetMainMenu()
+    {
+        Console.WriteLine("Please choose from the following: \n1 Simple Calculator \n2 Tip Calculator");
+        Console.Write("Enter Option:");
+        var menuChoice = Console.ReadLine();
+        while (menuChoice != "1" && menuChoice != "2")
+        {
+            Console.WriteLine("Invalid Input. Try Again...");
+            Console.WriteLine("Please choose from the following: \n1 for Simple Calculator \n2 for Tip Calculator");
+            Console.Write("Enter Option:");
+            menuChoice = Console.ReadLine();                
+        }
+        return menuChoice;
     }
 
     protected static decimal GetTipPercent()
