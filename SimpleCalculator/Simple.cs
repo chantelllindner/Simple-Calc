@@ -30,6 +30,7 @@ public class Simple: GetData
 
                 Console.WriteLine();
             }
+            
         }
 
         private static void CalculateStuff(double firstNumber, string txtOperator, double secondNumber)

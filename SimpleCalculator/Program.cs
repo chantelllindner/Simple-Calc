@@ -4,15 +4,27 @@
     {
         static void Main(string[] args)
         {
-          
+            bool keepGoing = true;
             //Intro
             Console.WriteLine("***********************************************\n Chantell's Simple Calculator & Tip Generator!\n***********************************************\n\n");
-            Console.WriteLine("This program has two options. Please select 1 for Simple Calculator or 2 for Tip Generator. ");
 
-           // Simple.TheCalculator();
-            Tip.TipCalculator();
+            while (keepGoing = true)
+            {
+                Console.WriteLine("Please select 1 for Simple Calculator or 2 for Tip Generator. ");
+                //Ask for 1 or 2
+                
+                //switch statement
 
-            
+                
+                // Simple.TheCalculator();
+                
+                Tip.TipCalculator();
+                
+                //Ask To Continue
+                keepGoing = GetData.GetContinue();
+            }
+
+
         }
        
     }
