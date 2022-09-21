@@ -6,14 +6,15 @@
         {
             bool keepGoing = true;
             //Intro
-            Console.WriteLine("***********************************************\n Chantell's Simple Calculator & Tip Generator!\n***********************************************\n\n");
+            Console.WriteLine("***********************************************\n Chantell's Simple & Tip Calculator Generator!\n***********************************************\n");
 
             while (keepGoing == true)
             {
-                //Ask for 1 or 2
+                Console.WriteLine("\n ***************\n   Main Menu   \n ***************");  
+                
                 string answer = GetData.GetMainMenu();
                 
-                //switch statement
+                
                 switch(answer)
                 {
                     case "1":
@@ -22,6 +23,9 @@
                     case "2":
                         keepGoing =Tip.TipCalculator();
                         break;
+                    case "3":
+                        keepGoing = false;
+                        break;
                     default:
                         keepGoing = false;
                         break;
@@ -29,7 +33,7 @@
                 
             }
             
-            Console.WriteLine("\nThank you! \n*******\nTHE END\n*******");
+            Console.WriteLine("\nThank you! \n**********\n THE END\n**********");
 
         }
        

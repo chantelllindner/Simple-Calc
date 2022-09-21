@@ -4,6 +4,7 @@ public class Simple: GetData
 {
         public static bool TheCalculator()
         {
+            Console.WriteLine("\n *****************\n Simple Calculator   \n *****************");
             Console.WriteLine("\nWelcome to Chantell's Simple Calculator, \nwhere you can do simple math to get simple answers. \nThis calculator can add, subtract, multiply, or divide 2 numbers. \nAnything more or anything less will result in an error. \nHave fun and math responably.\n");
             bool shouldContinue = true;
 

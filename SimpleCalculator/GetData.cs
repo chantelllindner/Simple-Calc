@@ -80,13 +80,13 @@ public class GetData
 
     public static string GetMainMenu()
     {
-        Console.WriteLine("Please choose from the following: \n1 Simple Calculator \n2 Tip Calculator");
+        Console.WriteLine("Please choose from the following: \n1 Simple Calculator \n2 Tip Calculator \n3 Exit Program");
         Console.Write("Enter Option:");
         var menuChoice = Console.ReadLine();
-        while (menuChoice != "1" && menuChoice != "2")
+        while (menuChoice != "1" && menuChoice != "2" && menuChoice != "3")
         {
             Console.WriteLine("Invalid Input. Try Again...");
-            Console.WriteLine("Please choose from the following: \n1 for Simple Calculator \n2 for Tip Calculator");
+            Console.WriteLine("Please choose from the following: \n1 Simple Calculator \n2 Tip Calculator \n3 Exit Program");
             Console.Write("Enter Option:");
             menuChoice = Console.ReadLine();                
         }
@@ -95,12 +95,12 @@ public class GetData
 
     protected static decimal GetTipPercent()
     {
-        Console.Write("Please enter option 1-3 for the tip amount you would like to calculate:\n1)18% \n2)20% \n3)25%\nEnter Option:");
+        Console.Write("Please enter option 1-3 for the tip amount you would like to calculate:\n1 18% \n2 20% \n3 25%\nEnter Option:");
         string? tipchoise = Console.ReadLine();
         while (tipchoise != "1" && tipchoise != "2" && tipchoise != "3" && tipchoise != "4")
         {
             Console.WriteLine("Invalid Input. Try Again..."); 
-            Console.Write("Please enter option 1-3 for the tip amount you would like to calculate:\n1)18% \n2)20% \n3)25%\nEnter Option:");
+            Console.Write("Please enter option 1-3 for the tip amount you would like to calculate:\n1 18% \n2 20% \n3 25%\nEnter Option:");
             tipchoise = Console.ReadLine();
         }
         switch (tipchoise)

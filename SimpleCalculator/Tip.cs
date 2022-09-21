@@ -5,10 +5,11 @@ public class Tip: GetData
     public static bool TipCalculator()
     {
         bool shouldContinue = true;
+        Console.WriteLine("\n ***************\n Tip Calculator  \n ***************");
+        Console.WriteLine("Welcome to Chantell's Tip Calculator! \nHere you will be able to enter your Bill amount, and select from 3 different Tip amounts. Don't be cheap, and math responsibly! ");
+
         while (shouldContinue == true)
         {
-            Console.WriteLine(
-                "\nWelcome to Chantell's Tip Calculator! \nHere you will be able to enter your Bill amount, and select from 3 different Tip amounts. Don't be cheap, and math responsibly! ");
             //get number
             decimal dollarNum = GetDollar();
             while (dollarNum < 0)
