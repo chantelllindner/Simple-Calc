@@ -14,7 +14,7 @@ public class Tip: GetData
             decimal dollarNum = GetDollar();
             while (dollarNum < 0)
             {
-                Console.WriteLine($"A Bill can not be negative amount. Try Again...");
+                Console.WriteLine($"A Bill can not be a negative amount. Try Again...");
                 dollarNum = GetDollar();
             }
 

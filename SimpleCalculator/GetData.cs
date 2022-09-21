@@ -41,7 +41,7 @@ public class GetData
         return Math.Round(number, 2);
     }
 
-    public static string GetContinue(string CalcName)
+    protected static string GetContinue(string CalcName)
     {
         Console.WriteLine("\n ***************\n   Continue?   \n ***************");               
         Console.WriteLine($"Please choose from the following: \n1 Try {CalcName} again \n2 Go back to Main Menu \n3 Exit Program ");
