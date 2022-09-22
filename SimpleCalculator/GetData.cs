@@ -2,6 +2,7 @@ namespace SimpleCalculator;
 
 public class GetData
 {
+    
     protected static double GetNumber(string numName)
     {
         double number;
@@ -41,26 +42,26 @@ public class GetData
         return Math.Round(number, 2);
     }
 
-    public static bool GetContinue()
+    protected static string GetContinue(string CalcName)
     {
-                       
-        Console.Write("Would you like to continue (y/n): ");
+        Console.WriteLine("\n ***************\n   Continue?   \n ***************");               
+        Console.WriteLine($"Please choose from the following: \n1 Try {CalcName} again \n2 Go back to Main Menu \n3 Exit Program ");
+        Console.Write("Enter Option:");
         string resposne = Console.ReadLine()!.ToLower();
 
-        while (resposne != "y" && resposne != "n")
+        while (resposne != "1" && resposne != "2" && resposne != "3")
         {
 
             Console.WriteLine("Invalid Input. Try Again...");                              
-            Console.Write("Would you like to continue (y/n): ");
+            Console.WriteLine($"Please choose from the following: \n1 Try {CalcName} again \n2 Go back to Main Menu \n3 Exit Program ");
+            Console.Write("Enter Option:");
             resposne = Console.ReadLine()!.ToLower();
                 
         }
-        if (resposne == "n")
-        {
-            Console.WriteLine("Thank you! \n______END______");
-            return false;
-        }
-        return true;
+        
+        Console.WriteLine();
+        return resposne;
+
 
     }
     
@@ -78,14 +79,29 @@ public class GetData
         return txtOperator;
     }
 
+    public static string GetMainMenu()
+    {
+        Console.WriteLine("Please choose from the following: \n1 Simple Calculator \n2 Tip Calculator \n3 Exit Program");
+        Console.Write("Enter Option:");
+        var menuChoice = Console.ReadLine();
+        while (menuChoice != "1" && menuChoice != "2" && menuChoice != "3")
+        {
+            Console.WriteLine("Invalid Input. Try Again...");
+            Console.WriteLine("Please choose from the following: \n1 Simple Calculator \n2 Tip Calculator \n3 Exit Program");
+            Console.Write("Enter Option:");
+            menuChoice = Console.ReadLine();                
+        }
+        return menuChoice;
+    }
+
     protected static decimal GetTipPercent()
     {
-        Console.Write("Please enter option 1-3 for the tip amount you would like to calculate:\n1)18% \n2)20% \n3)25%\nEnter Option:");
+        Console.Write("Please enter option 1-3 for the tip amount you would like to calculate:\n1 18% \n2 20% \n3 25%\nEnter Option:");
         string? tipchoise = Console.ReadLine();
         while (tipchoise != "1" && tipchoise != "2" && tipchoise != "3" && tipchoise != "4")
         {
             Console.WriteLine("Invalid Input. Try Again..."); 
-            Console.Write("Please enter option 1-3 for the tip amount you would like to calculate:\n1)18% \n2)20% \n3)25%\nEnter Option:");
+            Console.Write("Please enter option 1-3 for the tip amount you would like to calculate:\n1 18% \n2 20% \n3 25%\nEnter Option:");
             tipchoise = Console.ReadLine();
         }
         switch (tipchoise)
