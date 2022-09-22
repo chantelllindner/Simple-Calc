@@ -2,6 +2,7 @@ namespace SimpleCalculator;
 
 public class GetData
 {
+    
     protected static double GetNumber(string numName)
     {
         double number;

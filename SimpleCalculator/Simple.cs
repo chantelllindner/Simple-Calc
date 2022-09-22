@@ -10,7 +10,6 @@ public class Simple: GetData
 
             while (shouldContinue)
             {
-                
                 double firstNumber = GetNumber("first");
 
                 string txtOperator = GetOperator();
@@ -41,10 +40,7 @@ public class Simple: GetData
                         Console.WriteLine("This was not a valid option");
                         break;
                 }
-
-                
             }
-
             return true;
         }
 
@@ -52,7 +48,6 @@ public class Simple: GetData
         {
             switch (txtOperator)
             {
-
                 case "+":
                     Console.WriteLine($"{firstNumber} + {secondNumber} = {firstNumber + secondNumber}");
                     break;

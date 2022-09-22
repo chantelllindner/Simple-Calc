@@ -10,19 +10,15 @@ public class Tip: GetData
 
         while (shouldContinue == true)
         {
-            //get number
             decimal dollarNum = GetDollar();
             while (dollarNum < 0)
             {
                 Console.WriteLine($"A Bill can not be a negative amount. Try Again...");
                 dollarNum = GetDollar();
             }
-
-            //get tip %
+            
             decimal percent = GetTipPercent();
 
-
-            //math and print out. 
             Calculation(dollarNum, percent);
 
             string continueOption = GetContinue("Tip Calculator");
@@ -41,9 +37,7 @@ public class Tip: GetData
             }
 
         }
-
         return true;
-
     }
     
     //method to math tip

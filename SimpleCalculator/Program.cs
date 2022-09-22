@@ -13,8 +13,7 @@
                 Console.WriteLine("\n ***************\n   Main Menu   \n ***************");  
                 
                 string answer = GetData.GetMainMenu();
-                
-                
+
                 switch(answer)
                 {
                     case "1":
