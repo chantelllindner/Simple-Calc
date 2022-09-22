@@ -10,6 +10,7 @@ public class Tip: GetData
 
         while (shouldContinue == true)
         {
+            
             decimal dollarNum = GetDollar();
             while (dollarNum < 0)
             {
