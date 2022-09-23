@@ -98,7 +98,7 @@ public class GetData
     {
         Console.Write("Please enter option 1-3 for the tip amount you would like to calculate:\n1 18% \n2 20% \n3 25%\nEnter Option:");
         string? tipchoise = Console.ReadLine();
-        while (tipchoise != "1" && tipchoise != "2" && tipchoise != "3" && tipchoise != "4")
+        while (tipchoise != "1" && tipchoise != "2" && tipchoise != "3")
         {
             Console.WriteLine("Invalid Input. Try Again..."); 
             Console.Write("Please enter option 1-3 for the tip amount you would like to calculate:\n1 18% \n2 20% \n3 25%\nEnter Option:");
